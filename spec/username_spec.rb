@@ -16,16 +16,16 @@ describe 'The HelloWorld App' do
     specify { expect(last_response.body).to include "Alfonso Rush's username is arush" }
   end
 
-  # context 'get "/Rush/Alfonso/D"' do
-  #   before { get '/Rush/Alfonso/D' }
-  #   specify { expect(last_response).to be_ok }
-  #   specify { expect(last_response.body).to include "Alfonso D Rush's username is adrush" }    
-  # end
+  context 'get "/Rush/Alfonso/D"' do
+    before { get '/Rush/Alfonso/D' }
+    specify { expect(last_response).to be_ok }
+    specify { expect(last_response.body).to include "Alfonso D Rush's username is adrush" }    
+  end
 
-  # context 'get "/Matsumoto/Yukihiro"' do
-  #   before { get '/Matsumoto/Yukihiro' }
-  #   specify { expect(last_response).to be_ok }
-  #   specify { expect(last_response.body).to include "Yukihiro Matsumoto's username is ymatsu" }
-  # end
+  context 'get "/Matsumoto/Yukihiro"' do
+    before { get '/Matsumoto/Yukihiro' }
+    specify { expect(last_response).to be_ok }
+    specify { expect(last_response.body).to include "Yukihiro Matsumoto's username is ymatsu" }
+  end
 
 end
